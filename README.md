@@ -1,2 +1,2 @@
 # app-holding
-Business site for a holding company
+This app serves as a Business portal for a holding company.
