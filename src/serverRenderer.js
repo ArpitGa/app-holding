@@ -1,5 +1,6 @@
 import React from 'react'
 import {renderToString} from 'react-dom/server'
+import buildManifest from '../public/build-manifest.json'
 import Page from '../browser'
 
 class ServerRenderer {
@@ -30,6 +31,13 @@ class ServerRenderer {
             </div>
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+            <script src="/scripts/${buildManifest['client.js']}"></script>
+            <script type="text/javascript">
+              $(document).ready(function() {
+                console.log("ready");
+                $(".button-collapse").sideNav();
+              });
+            </script>
           </body>
         </html>
         `)

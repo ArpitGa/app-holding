@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
 	  "start": "node index.js",
+    "clean": "rm -rf public/*",
     "webpack": "webpack -p",
+    "watch": "./node_modules/webpack/bin/webpack.js --watch",
     "webpack-profile": "webpack --profile --json > profile.json"
   },
   "author": "Infinity Solutions Inc.",
@@ -23,5 +25,9 @@
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "yargs": "6.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.3.0",
+    "webpack-assets-manifest": "^0.7.0"
   }
 }
