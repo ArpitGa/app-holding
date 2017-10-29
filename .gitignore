@@ -1,0 +1,20 @@
+#logs
+logs
+*.log
+
+#dependencies
+node_modules
+
+#build output js,css,..
+public
+
+#deployment package
+pkg
+
+#temp files
+*.swp
+*.tgz
+.sonar
+.DS_Store
+profile.json
+.vscode

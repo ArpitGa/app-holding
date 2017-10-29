@@ -1,0 +1,4 @@
+{
+  "presets" : ["es2015", "react"],
+  "plugins": ["transform-object-rest-spread", "babel-plugin-transform-es2015-classes","transform-react-remove-prop-types"]
+}
