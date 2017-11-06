@@ -2,12 +2,23 @@ import React from 'react'
 import {renderToString} from 'react-dom/server'
 import buildManifest from '../public/build-manifest.json'
 import Page from '../browser'
+let memcache = "";
 
 class ServerRenderer {
 
   route (req, res) {
-    const dom = renderToString(<Page />)
-    this.renderPage(req, res, dom)
+    const start = new Date();
+    let dom = "";
+    if (memcache == "")  {
+      dom = renderToString(<Page />)
+      memcache = dom;
+    } else {
+      dom = memcache;
+    }
+    const end = new Date();
+    const diff = end - start;
+    console.log("Render time in milliseconds : " + diff);
+    this.renderPage(req, res, dom);
   }
   renderPage (req, res, dom) {
     if (!res.headersSent) {
@@ -29,9 +40,8 @@ class ServerRenderer {
            <div id="main">
               ${dom}
             </div>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-            <script src="/scripts/${buildManifest['client.js']}"></script>
             <script type="text/javascript">
               $(document).ready(function() {
                 console.log("ready");
