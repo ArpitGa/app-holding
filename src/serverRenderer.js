@@ -47,6 +47,19 @@ class ServerRenderer {
                 console.log("ready");
                 $(".button-collapse").sideNav();
               });
+
+              $(document).ready(function(){
+                $('.slider').slider();
+                $('.slider').slider('pause');
+                $('.slider').slider('start');
+                $('.slider').slider('next');
+                $('.slider').slider('prev');
+              });
+
+              $(document).ready(function(){
+                $('.carousel').carousel();
+              });
+
             </script>
           </body>
         </html>
