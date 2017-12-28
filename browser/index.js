@@ -4,6 +4,8 @@ import Header from './components/presentation/header';
 import PrimaryCarousel from './components/presentation/carousel/primaryCarousel';
 import SecondaryCarousel from './components/presentation/carousel/secondaryCarousel';
 import Cards from './components/presentation/cards';
+import Contact from './components/presentation/contact';
+import About from './components/presentation/about';
 
 class Page extends React.Component {
 
@@ -13,7 +15,9 @@ class Page extends React.Component {
         <div className='main-content'>
           <Header />
           <PrimaryCarousel />
+          <About />
           <Cards />
+          <Contact />
           <Footer />
         </div>
       </main>
