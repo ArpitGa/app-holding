@@ -5,8 +5,8 @@ class Contact extends React.Component {
     return (
    	<div>
 	  <div>
-	    <h3 className="center-align">Contact LVH</h3>
-	  </div>	
+	    <h3 id="contact_lvh" className="center-align">Contact LVH</h3>
+	  </div>
     	<div className="row blue lighten-4">
     		<div className="col s6">
     			    <blockquote className="flow-text">We are here to help you. For all enquiries, please email enquiries@lvholdings.co.uk or you can reach us over

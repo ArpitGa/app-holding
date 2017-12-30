@@ -3,7 +3,7 @@ import React from 'react';
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="page-footer">
+      <footer className="page-footer grey darken-3">
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
@@ -22,7 +22,7 @@ class Footer extends React.Component {
           </div>
         </div>
         <div className="footer-copyright">
-          <div className="container black-text text-lighten-3">
+          <div className="container white-text text-lighten-3">
           © 2017 Copyright Text
           <div className="fixed-action-btn horizontal click-to-toggle">
             <a className="btn-floating btn-large red">

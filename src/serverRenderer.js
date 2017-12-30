@@ -57,10 +57,12 @@ class ServerRenderer {
               });
 
               $(document).ready(function(){
+                console.log("reeree");
                 $('.carousel').carousel();
               });
 
             </script>
+            <script type="text/javascript" src="/utils/scroller.js"></script>
           </body>
         </html>
         `)

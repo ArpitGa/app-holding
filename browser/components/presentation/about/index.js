@@ -4,14 +4,14 @@ class About extends React.Component {
   render() {
     return (
     	<div>
-		   <h3 className="center-align">About LVH</h3>
+		   <h3 id="about_heading" className="center-align">About LVH</h3>
 		   <div className="row teal lighten-2">
 		       <div className="col s6 card-panel teal lighten-2">
 				    <blockquote className="flow-text">
-				    	Lloyd Vaughan Holdings (LVH) is the consultancy for Aidan Vaughan.<br></br><br></br> 
-				    	LVH was established in 2017. 
+				    	Lloyd Vaughan Holdings (LVH) is the consultancy for Aidan Vaughan.<br></br><br></br>
+				    	LVH was established in 2017.
 				    	LVH can provide consultancy for financial advisors, private offices, and discretionary fund managers. <br></br><br></br>
-				    	Aidan has a network of contacts based upon his lifetime in Financial Services. 
+				    	Aidan has a network of contacts based upon his lifetime in Financial Services.
 				    </blockquote>
 	    	    </div>
 	    	   <div className="col s6 card-panel teal lighten-2">
