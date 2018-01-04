@@ -61,6 +61,23 @@ class ServerRenderer {
                 $('.carousel').carousel();
               });
 
+              $(document).ready(function(){
+                var from,to,subject,text;
+                $("#send_email").click(function(){      
+                    to="enquiries@lvholdings.co.uk";
+                    subject="Customer Enquiry";
+                    name=document.getElementById("name").value;
+                    text=document.getElementById("textarea1").value;
+                    email=document.getElementById("email").value;
+                    phone=document.getElementById("phone").value;
+                    $.get("http://localhost:3000/send",{to:to,subject:subject,text:text,name:name,email:email,phone:phone},function(data){
+                      if(data=="sent"){
+                        console.log("E-mail sent");
+                      }
+                    });
+                });
+              });
+
             </script>
             <script type="text/javascript" src="/utils/scroller.js"></script>
           </body>

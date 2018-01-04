@@ -43,7 +43,7 @@ class Contact extends React.Component {
         	  	</div>
       		  </div>
       		  <div className="row center-align">
-	      		  <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+	      		  <button className="btn waves-effect waves-light" id="send_email">Submit
 	    			<i className="material-icons right">send</i>
 	  			  </button>
 	  		  </div>

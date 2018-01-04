@@ -22,12 +22,15 @@
     "babel-register": "^6.26.0",
     "body-parser": "^1.18.1",
     "express": "^4.15.4",
+    "nodemailer": "^4.4.1",
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "yargs": "6.3.0"
   },
   "devDependencies": {
+    "nodemailer": "^4.4.1",
     "webpack": "^3.3.0",
-    "webpack-assets-manifest": "^0.7.0"
+    "webpack-assets-manifest": "^0.7.0",
+    "xoauth2": "^1.2.0"
   }
 }
