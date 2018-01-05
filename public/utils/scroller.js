@@ -9,19 +9,19 @@ function scrollToContent(idx) {
   console.log(list[idx]);
   var pos = getPosition(document.getElementById(elementID[idx]));
   console.log(pos);
-  scroller(document.body, pos.y, 1000)
+  scroller(window, pos.y, 1000)
 };
 
 function scroller(element, to, duration) {
   console.log("scr");
-  let start = element.scrollTop
+  let start = element.scrollY
   let change = to - start
   let increment = 20
 
   let animateScroll = (elapsedTime) => {
     elapsedTime += increment;
     let position = easeInOutQuad(elapsedTime, start, change, duration);
-    element.scrollTop = position;
+    element.scrollTo(0, position);
     if (elapsedTime < duration) {
       setTimeout(function () {
         animateScroll(elapsedTime);
