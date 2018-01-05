@@ -34,6 +34,7 @@ class ServerRenderer {
             <title>Holding Company page</title>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+            <link rel="stylesheet" href="/styles/custom.css">
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           </head>
           <body>
@@ -63,7 +64,7 @@ class ServerRenderer {
 
               $(document).ready(function(){
                 var from,to,subject,text;
-                $("#send_email").click(function(){      
+                $("#send_email").click(function(){
                     to="enquiries@lvholdings.co.uk";
                     subject="Customer Enquiry";
                     name=document.getElementById("name").value;

@@ -1,0 +1,18 @@
+.contact-div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contact-form {
+  border-left: 1px solid #cfd8dc;
+}
+
+
+.slider .indicators .indicator-item.active {
+  background-color: black !important;
+}
+
+.theme-background {
+  background-color: #f7f7f7 !important;
+}

@@ -6,8 +6,8 @@ class Cards extends React.Component {
     	<div>
 		  <div>
 		    <h3 className="center-align">Partners</h3>
-		  </div>	    	
-		  <div className="row light-blue lighten-3">
+		  </div>
+		  <div className="row theme-background">
 		    	<div className="col s12 m4">
 					<div className="card small hoverable">
 						<div className="card-image waves-effect waves-block waves-light">

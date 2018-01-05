@@ -7,13 +7,14 @@ class Contact extends React.Component {
 	  <div>
 	    <h3 id="contact_lvh" className="center-align">Contact LVH</h3>
 	  </div>
-    	<div className="row blue lighten-4">
-    		<div className="col s6">
+    	<div className="theme-background">
+    		<div className="col s6 contact-div">
     			    <blockquote className="flow-text">We are here to help you. For all enquiries, please email enquiries@lvholdings.co.uk or you can reach us over
     			    phone on 07495392902<br></br>
     			    Alternatively, please fill out the enquiries box below, LVH will aim to get back to you as soon as possible</blockquote>
     		</div>
-		    <form className="col s6 blue-grey lighten-5">
+        <div className="contact-div contact-form">
+		    <form className="col s6">
 		      <div className="row">
 		        <div className="input-field col s12">
 		          <i className="material-icons prefix">account_circle</i>
@@ -48,6 +49,7 @@ class Contact extends React.Component {
 	  			  </button>
 	  		  </div>
 		    </form>
+        </div>
   		</div>
   	</div>
     )
